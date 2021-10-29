@@ -31,14 +31,14 @@ const Carousel = () => {
   const classes = useStyles();
   const currency = useSelector((state) => state.crypto.currency);
   const symbol = useSelector((state) => state.symbol.value);
-  console.log(currency);
+  // console.log(currency);
 
   const getTrendingCoins = async () => {
     const { data } = await axios.get(TrendingCoins(currency));
     // console.log(data)
     setTrending(data);
   };
-  console.log(trending);
+  // console.log(trending);
 
   useEffect(() => {
     getTrendingCoins();
