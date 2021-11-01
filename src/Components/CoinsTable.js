@@ -33,7 +33,7 @@ const CoinsTable = () => {
     setLoading(true);
     const { data } = await axios.get(CoinList(currency));
     setCoins(data);
-    console.log(data);
+    // console.log(data);
     setLoading(false);
   };
 
